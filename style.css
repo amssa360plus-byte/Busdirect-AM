@@ -1,4 +1,51 @@
 .logo{
+    margin-left: 70px;
     width: 70px;
-    height: 50px;
+    height: 60px;
+    position: relative;
+    top: -60px;
+}
+#name{
+    width: 40px;
+    position: relative;
+    top: -40px;
+    left: 60px;
+    font-weight: bold;
+    font-size:medium;
+}
+
+#header1{
+    background-color: whitesmoke;
+    
+    border-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    margin-top: 30px;
+    width: 90vw;
+    margin-left: 60px;
+    
+}
+.logo{
+    top: 2px;
+}
+
+.right-header{
+    display: flex;
+    margin-top: -40px;
+    flex-direction: row;
+    margin-left: 77vw;
+
+}
+#resirvation{
+    margin-right: 10px;
+    font-weight: bold;
+}
+#ticket{
+    margin-right: 20px;
+    font-weight: bold;
+}
+.fa-circle-user{
+    position: relative;
+    top: 3px;
 }
