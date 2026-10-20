@@ -15,8 +15,8 @@
 }
 
 #header1{
-    background-color: whitesmoke;
     
+    background-color: whitesmoke;
     border-color: black;
     display: flex;
     flex-direction: column;
@@ -49,3 +49,4 @@
     position: relative;
     top: 3px;
 }
+    
