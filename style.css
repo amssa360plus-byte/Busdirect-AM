@@ -49,4 +49,22 @@
     position: relative;
     top: 3px;
 }
-    
+#headr2{
+  border-radius: 20px;
+  border-color: black;
+  background-color: whitesmoke;
+  margin-top: 10px;
+  height: 50px;
+  width: 300px;
+  margin-left: 70px;
+}
+span .fa-road{
+    margin-left: 73px;
+    margin-top: 14px;
+}
+#safi{
+    font-weight:bolder ;
+}
+#marackech{
+    font-weight: bolder;
+}
