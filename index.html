@@ -1,71 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BUS-DIRECT</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
+
 <body>
-    <header> 
-      <div class="border-2 border-solid rounded-full h-12 " id="header1">
-          <div class="logo">
-            
-            <img src="img/360_F_214292295_dsMiBAa83bToIrvyKXeXDJyZtaK0S2bv-removebg-preview.png" alt="logo bus">
-            <span  id="name">AM BUS</span>
-          </div>
-        <div class="right-header">
-             <span>   <a href="#resivation" id="resirvation">resirvation  </a>
-           <a href="#ticket" id="ticket">ticket</a>
-           <i class="fa-regular fa-circle-user"></i></span>
-        </div>
+    <header>
+        <div class="border-2 border-solid rounded-full h-12 " id="header1">
+            <div class="logo">
+
+                <img src="img/360_F_214292295_dsMiBAa83bToIrvyKXeXDJyZtaK0S2bv-removebg-preview.png" alt="logo bus">
+                <span id="name">AM BUS</span>
+            </div>
+            <div class="right-header">
+                <span> <a href="#resivation" id="resirvation">resirvation </a>
+                    <a href="#ticket" id="ticket">ticket</a>
+                    <i class="fa-regular fa-circle-user"></i></span>
+            </div>
 
     </header>
     <main>
         <div class="allheader">
             <div class="border-2 border-solid" id="headr2">
-            <span> <i class="fa-solid fa-road"></i>
-                <span id="safi">safi</span>
-                <span><i class="fa-solid fa-right-long"></i> </span> 
-                <span id="marackech">marackech</span>
-                    </div>
+                <span> <i class="fa-solid fa-road"></i>
+                    <span id="safi">safi</span>
+                    <span><i class="fa-solid fa-right-long"></i> </span>
+                    <span id="marackech">marackech</span>
+            </div>
             <div class="border-2 border-solid" id="headr3">
-            <p id="price">80 DH / Place</p>
-            </div> 
-        
-             <div class="border-2 border-solid" id="headr4" >
+                <p id="price">80 DH / Place</p>
+            </div>
+
+            <div class="border-2 border-solid" id="headr4">
                 <div class="dot">
-                <span><i class="fa-solid fa-circle-dot" style="color: rgb(214, 7, 7);"></i></span>
-                <span>oucupe</span>
-                <span><i class="fa-solid fa-circle-dot" style="color: rgb(1, 184, 74);"></i></span>
-                <span>libre</span>
-             </div>  
-             </div>       
-        </div>
-        <div class="border-2 border-solid ">
-            <div class="child border-2 border-solid">
-                
+                    <span><i class="fa-solid fa-circle-dot" style="color: rgb(214, 7, 7);"></i></span>
+                    <span>oucupe</span>
+                    <span><i class="fa-solid fa-circle-dot" style="color: rgb(1, 184, 74);"></i></span>
+                    <span>libre</span>
+                </div>
             </div>
         </div>
+        <div class="Place">
+        
+        <div class="max-w-md mx-auto p-5 bg-slate-50 border border-gray-200 rounded-2xl shadow-sm">
+
+            <div
+                class="flex items-center justify-between mb-5 p-3 bg-white border border-gray-200 rounded-xl text-sm font-semibold text-slate-700 shadow-sm">
+                <div class="flex items-center gap-2">
+                    <span class="p-1 bg-gray-50 text-600 rounded-lg"><i class="fa-solid fa-bus-simple"></i>
+                    </span>
+                    <span>Poste Conducteur</span>
+                </div>
+                <span class="text-xs text-slate-400">Devant</span>
+            </div>
+
+            <div id="seats-grid" class="grid grid-cols-4 gap-3">
+
+                <!-- Place 01 -->
+                <button type="button" data-seat="1"
+                    class="flex flex-col items-center justify-center p-3 bg-white border border-gray-200 rounded-xl shadow-sm hover:border-blue-500 hover:bg-blue-50/50 transition cursor-pointer group">
+                    <span class="text-base font-bold text-slate-700 group-hover:text-blue-600">01</span>
+                    <span class="text-xs text-slate-400 font-medium">Libre</span>
+                </button>
+
+                <!-- Place 02 -->
+                <button type="button" data-seat="2"
+                    class="flex flex-col items-center justify-center p-3 bg-white border border-gray-200 rounded-xl shadow-sm hover:border-blue-500 hover:bg-blue-50/50 transition cursor-pointer group">
+                    <span class="text-base font-bold text-slate-700 group-hover:text-blue-600">02</span>
+                    <span class="text-xs text-slate-400 font-medium">Libre</span>
+                </button>
+
+                <!-- Place 03 -->
+                <button type="button" data-seat="3"
+                    class="flex flex-col items-center justify-center p-3 bg-white border border-gray-200 rounded-xl shadow-sm hover:border-blue-500 hover:bg-blue-50/50 transition cursor-pointer group">
+                    <span class="text-base font-bold text-slate-700 group-hover:text-blue-600">03</span>
+                    <span class="text-xs text-slate-400 font-medium">Libre</span>
+                </button>
+
+                <!-- Place 04 -->
+                <button type="button" data-seat="4"
+                    class="flex flex-col items-center justify-center p-3 bg-white border border-gray-200 rounded-xl shadow-sm hover:border-blue-500 hover:bg-blue-50/50 transition cursor-pointer group">
+                    <span class="text-base font-bold text-slate-700 group-hover:text-blue-600">04</span>
+                    <span class="text-xs text-slate-400 font-medium">Libre</span>
+                </button>
+
+                <!-- Place 05 -->
+                <button type="button" data-seat="5"
+                    class="flex flex-col items-center justify-center p-3 bg-white border border-gray-200 rounded-xl shadow-sm hover:border-blue-500 hover:bg-blue-50/50 transition cursor-pointer group">
+                    <span class="text-base font-bold text-slate-700 group-hover:text-blue-600">05</span>
+                    <span class="text-xs text-slate-400 font-medium">Libre</span>
+                </button>
+
+                <!-- Place 06 -->
+                <button type="button" data-seat="6"
+                    class="flex flex-col items-center justify-center p-3 bg-white border border-gray-200 rounded-xl shadow-sm hover:border-blue-500 hover:bg-blue-50/50 transition cursor-pointer group">
+                    <span class="text-base font-bold text-slate-700 group-hover:text-blue-600">06</span>
+                    <span class="text-xs text-slate-400 font-medium">Libre</span>
+                </button>
+
+                <!-- Place 07 -->
+                <button type="button" data-seat="7"
+                    class="flex flex-col items-center justify-center p-3 bg-white border border-gray-200 rounded-xl shadow-sm hover:border-blue-500 hover:bg-blue-50/50 transition cursor-pointer group">
+                    <span class="text-base font-bold text-slate-700 group-hover:text-blue-600">07</span>
+                    <span class="text-xs text-slate-400 font-medium">Libre</span>
+                </button>
+
+                <!-- Place 08 -->
+                <button type="button" data-seat="8"
+                    class="flex flex-col items-center justify-center p-3 bg-white border border-gray-200 rounded-xl shadow-sm hover:border-blue-500 hover:bg-blue-50/50 transition cursor-pointer group">
+                    <span class="text-base font-bold text-slate-700 group-hover:text-blue-600">08</span>
+                    <span class="text-xs text-slate-400 font-medium">Libre</span>
+                </button>
+
+                <!-- Place 09 -->
+                <button type="button" data-seat="9"
+                    class="flex flex-col items-center justify-center p-3 bg-white border border-gray-200 rounded-xl shadow-sm hover:border-blue-500 hover:bg-blue-50/50 transition cursor-pointer group">
+                    <span class="text-base font-bold text-slate-700 group-hover:text-blue-600">09</span>
+                    <span class="text-xs text-slate-400 font-medium">Libre</span>
+                </button>
+
+                <!-- Place 10 -->
+                <button type="button" data-seat="10"
+                    class="flex flex-col items-center justify-center p-3 bg-white border border-gray-200 rounded-xl shadow-sm hover:border-blue-500 hover:bg-blue-50/50 transition cursor-pointer group">
+                    <span class="text-base font-bold text-slate-700 group-hover:text-blue-600">10</span>
+                    <span class="text-xs text-slate-400 font-medium">Libre</span>
+                </button>
+
+                <!-- Place 11 -->
+                <button type="button" data-seat="11"
+                    class="flex flex-col items-center justify-center p-3 bg-white border border-gray-200 rounded-xl shadow-sm hover:border-blue-500 hover:bg-blue-50/50 transition cursor-pointer group">
+                    <span class="text-base font-bold text-slate-700 group-hover:text-blue-600">11</span>
+                    <span class="text-xs text-slate-400 font-medium">Libre</span>
+                </button>
+
+                <!-- Place 12 -->
+                <button type="button" data-seat="12"
+                    class="flex flex-col items-center justify-center p-3 bg-white border border-gray-200 rounded-xl shadow-sm hover:border-blue-500 hover:bg-blue-50/50 transition cursor-pointer group">
+                    <span class="text-base font-bold text-slate-700 group-hover:text-blue-600">12</span>
+                    <span class="text-xs text-slate-400 font-medium">Libre</span>
+                </button>
+
+                <!-- Place 13 -->
+                <button type="button" data-seat="13"
+                    class="flex flex-col items-center justify-center p-3 bg-white border border-gray-200 rounded-xl shadow-sm hover:border-blue-500 hover:bg-blue-50/50 transition cursor-pointer group">
+                    <span class="text-base font-bold text-slate-700 group-hover:text-blue-600">13</span>
+                    <span class="text-xs text-slate-400 font-medium">Libre</span>
+                </button>
+
+                <!-- Place 14 -->
+                <button type="button" data-seat="14"
+                    class="flex flex-col items-center justify-center p-3 bg-white border border-gray-200 rounded-xl shadow-sm hover:border-blue-500 hover:bg-blue-50/50 transition cursor-pointer group">
+                    <span class="text-base font-bold text-slate-700 group-hover:text-blue-600">14</span>
+                    <span class="text-xs text-slate-400 font-medium">Libre</span>
+                </button>
+
+                <!-- Place 15 -->
+                <button type="button" data-seat="15"
+                    class="flex flex-col items-center justify-center p-3 bg-white border border-gray-200 rounded-xl shadow-sm hover:border-blue-500 hover:bg-blue-50/50 transition cursor-pointer group">
+                    <span class="text-base font-bold text-slate-700 group-hover:text-blue-600">15</span>
+                    <span class="text-xs text-slate-400 font-medium">Libre</span>
+                </button>
+
+                <!-- Place 16 -->
+                <button type="button" data-seat="16"
+                    class="flex flex-col items-center justify-center p-3 bg-white border border-gray-200 rounded-xl shadow-sm hover:border-blue-500 hover:bg-blue-50/50 transition cursor-pointer group">
+                    <span class="text-base font-bold text-slate-700 group-hover:text-blue-600">16</span>
+                    <span class="text-xs text-slate-400 font-medium">Libre</span>
+                </button>
+
+                <!-- Place 17 -->
+                <button type="button" data-seat="17"
+                    class="flex flex-col items-center justify-center p-3 bg-white border border-gray-200 rounded-xl shadow-sm hover:border-blue-500 hover:bg-blue-50/50 transition cursor-pointer group">
+                    <span class="text-base font-bold text-slate-700 group-hover:text-blue-600">17</span>
+                    <span class="text-xs text-slate-400 font-medium">Libre</span>
+                </button>
+
+                <!-- Place 18 -->
+                <button type="button" data-seat="18"
+                    class="flex flex-col items-center justify-center p-3 bg-white border border-gray-200 rounded-xl shadow-sm hover:border-blue-500 hover:bg-blue-50/50 transition cursor-pointer group">
+                    <span class="text-base font-bold text-slate-700 group-hover:text-blue-600">18</span>
+                    <span class="text-xs text-slate-400 font-medium">Libre</span>
+                </button>
+
+                <!-- Place 19 -->
+                <button type="button" data-seat="19"
+                    class="flex flex-col items-center justify-center p-3 bg-white border border-gray-200 rounded-xl shadow-sm hover:border-blue-500 hover:bg-blue-50/50 transition cursor-pointer group">
+                    <span class="text-base font-bold text-slate-700 group-hover:text-blue-600">19</span>
+                    <span class="text-xs text-slate-400 font-medium">Libre</span>
+                </button>
+
+                <!-- Place 20 -->
+                <button type="button" data-seat="20"
+                    class="flex flex-col items-center justify-center p-3 bg-white border border-gray-200 rounded-xl shadow-sm hover:border-blue-500 hover:bg-blue-50/50 transition cursor-pointer group">
+                    <span class="text-base font-bold text-slate-700 group-hover:text-blue-600">20</span>
+                    <span class="text-xs text-slate-400 font-medium">Libre</span>
+                </button>
+
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="section">
+                    <div class="flex flex-col gap-6">
+                <section aria-labelledby="reserve-title"
+                    class="rounded-2xl border border-slate-200 bg-white p-4 shadow-xs sm:p-5">
+                    <h2 id="reserve-title" class="mb-3 text-base font-bold text-slate-900">New reservation</h2>
+                    <form id="reserve-form" novalidate>
+                        <label for="reserve-name" class="mb-1 block text-sm font-semibold text-slate-700">Passenger
+                            name</label>
+                        <input id="reserve-name" name="reserve-name" type="text" autocapitalize="none"
+                            enterkeyhint="done" autocomplete="off" maxlength="60" placeholder="e.g. Ahmed Amine"
+                            class="mb-3 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm placeholder:text-slate-400" />
+                        <label for="reserve-seat" class="mb-1 block text-sm font-semibold text-slate-700">Seat
+                            (optional)</label>
+                        <select id="reserve-seat" name="reserve-seat"
+                            class="mb-3 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 pr-9 text-sm">
+                            <option value="">Choose a seat</option>
+                        </select>
+                        <button type="submit" id="reserve-submit"
+                            
+                            class="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-gray-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-gray-600 active:bg-teal-600 disabled:cursor-not-allowed disabled:opacity-50">
+                            Reserve seat — 80 DH
+                        </button>
+                    </form>
+                    <div id="reserve-notification" class="mt-3" aria-live="polite"></div>
+                    <div id="ticket-preview" class="mt-3 hidden" role="status" aria-live="polite"></div>
+                </section>
+
+                <section aria-labelledby="modify-title"
+                    class="rounded-2xl border border-slate-200 bg-white p-4 shadow-xs sm:p-5">
+                    <h2 id="modify-title" class="mb-3 text-base font-bold text-slate-900">Modify reservation</h2>
+                    <form id="modify-form" novalidate>
+                        <label for="modify-passenger"
+                            class="mb-1 block text-sm font-semibold text-slate-700">Passenger</label>
+                        <select id="modify-passenger" name="modify-passenger"
+                            class="mb-3 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 pr-9 text-sm">
+                            <option value="">Select a passenger…</option>
+                        </select>
+                        <label for="modify-name" class="mb-1 block text-sm font-semibold text-slate-700">Passenger
+                            name</label>
+                        <input id="modify-name" type="text" autocapitalize="none" enterkeyhint="done" autocomplete="off"
+                            maxlength="60"
+                            class="mb-3 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm placeholder:text-slate-400"
+                            placeholder="Name appears after selecting a passenger" />
+                        <label for="modify-seat" class="mb-1 block text-sm font-semibold text-slate-700">Destination
+                            seat</label>
+                        <select id="modify-seat"
+                            class="mb-3 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 pr-9 text-sm">
+                            <option value="">No reservation selected</option>
+                        </select>
+                        <button type="submit"
+                            class="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-slate-800 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-slate-700 active:bg-slate-900 disabled:cursor-not-allowed disabled:opacity-50">
+                            <i class="fa-solid fa-square-check"></i>
+                            Save changes
+                        </button>
+                    </form>
+                    <div id="modify-notification" class="mt-3" aria-live="polite"></div>
+                </section>
+
+                <section aria-labelledby="cancel-title"
+                    class="rounded-2xl border border-slate-200 bg-white p-4 shadow-xs sm:p-5">
+                    <h2 id="cancel-title" class="mb-3 text-base font-bold text-slate-900">Cancel reservation</h2>
+                    <form id="cancel-form" novalidate>
+                        <label for="cancel-passenger"
+                            class="mb-1 block text-sm font-semibold text-slate-700">Passenger</label>
+                        <select id="cancel-passenger" name="cancel-passenger"
+                            class="mb-3 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 pr-9 text-sm">
+                            <option value="">Select a passenger…</option>
+                        </select>
+                        <p id="cancel-details" class="mb-3 text-sm text-slate-600 hidden"></p>
+                        <button type="submit"
+                            class="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-rose-300 bg-rose-50 px-4 py-2.5 text-sm font-semibold text-rose-700 transition-colors hover:bg-rose-100 active:bg-rose-200 disabled:cursor-not-allowed disabled:opacity-50">
+                             <i class="fa-solid fa-ban"></i>
+                            Cancel reservation
+                        </button>
+                    </form>
+                    <div id="cancel-notification" class="mt-3" aria-live="polite"></div>
+                </section>
+            </div>
+        </div>
+    </div>
     </main>
 
 
-<footer class="bg-neutral-primary-soft rounded-base shadow-xs border border-default m-4" >
-    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between" class="footer1">
-      <span class="text-sm text-body sm:text-center">© 2026 <a class="hover:underline">AM-BUS™</a>. All Rights Reserved.
-    </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-body sm:mt-0">
-        <li>
-            <a href="#" class="hover:underline me-4 md:me-6">resirvation</a>
-        </li>
-        <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Ticket</a>
-        </li>
-    </ul>
-    </div>
-</footer>
+    <footer class="bg-neutral-primary-soft rounded-base shadow-xs border border-default m-4">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between" class="footer1">
+            <span class="text-sm text-body sm:text-center">© 2026 <a class="hover:underline">AM-BUS™</a>. All Rights
+                Reserved.
+            </span>
+            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-body sm:mt-0">
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">resirvation</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">Ticket</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
 </body>
+
 </html>
