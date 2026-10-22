@@ -5,12 +5,13 @@ const reserveSeatSelect = document.querySelector('#reserve-seat');
 const reserveNotification = document.querySelector('#reserve-notification');
 const ticketPreview = document.querySelector('#ticket-preview');
 
+
 reserveForm.addEventListener('submit', function(e) {
     e.preventDefault(); 
     const passengerName = reserveNameInput.value.trim();
     const selectedSeat = reserveSeatSelect.value;
 
-    if (!passengerName) {
+    if (passengerName === '') {
         reserveNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">Please enter passenger name!</p>';
         ticketPreview.classList.add('hidden');
         return;
@@ -26,6 +27,8 @@ reserveForm.addEventListener('submit', function(e) {
             <p class="text-teal-600 font-semibold pt-1">Price: 80 DH</p>
         </div>
     `;
+
+    
     
     ticketPreview.classList.remove('hidden');
 });
