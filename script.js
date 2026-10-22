@@ -83,12 +83,22 @@ reserveForm.addEventListener('submit', function(e) {
     e.preventDefault(); 
     const passengerName = reserveNameInput.value.trim();
     const selectedSeat = reserveSeatSelect.value;
+    const id = selectedSeat.padStart(2, '0');
+    const targetSeat = document.querySelector(`#place${id}`);
+
+    if (targetSeat.style.backgroundColor === "red") {
+        reserveNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">the place resrvie</p>';
+        ticketPreview.classList.add('hidden');
+        return;
+    }
+    
 
     if (passengerName === '') {
         reserveNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">Please enter passenger name!</p>';
         ticketPreview.classList.add('hidden');
         return;
     }
+    
 
     reserveNotification.innerHTML = '';
 
@@ -129,7 +139,7 @@ reserveForm.addEventListener('submit', function(e) {
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
     `;
-        mo_modifie.innerHTML = `<option id="siage03">${passengerName}</option>`;
+        mo_modifie.innerHTML += `<option id="siage03">${passengerName}</option>`;
 
 }
       if (reserveSeatSelect.value === "4") {
