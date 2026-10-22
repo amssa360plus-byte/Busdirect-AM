@@ -74,6 +74,8 @@ const lib19 = document.querySelector('#libre19')
 const lib20 = document.querySelector('#libre20')
 
 
+const mo_modifie = document.querySelector('#modify-passenger')
+
 
 
 
@@ -106,6 +108,7 @@ reserveForm.addEventListener('submit', function(e) {
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
     `;
+    mo_modifie.innerHTML += `<option id="siage01">${passengerName}</option>`;
     
 }    
       if (reserveSeatSelect.value === "2") {
@@ -116,6 +119,7 @@ reserveForm.addEventListener('submit', function(e) {
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
     `;
+    mo_modifie.innerHTML += `<option id="siage02">${passengerName}</option>`;
 }   
       if (reserveSeatSelect.value === "3") {
     resvplace03.style.backgroundColor = "red";
@@ -125,6 +129,8 @@ reserveForm.addEventListener('submit', function(e) {
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
     `;
+        mo_modifie.innerHTML = `<option id="siage03">${passengerName}</option>`;
+
 }
       if (reserveSeatSelect.value === "4") {
     resvplace04.style.backgroundColor = "red";
@@ -134,6 +140,7 @@ reserveForm.addEventListener('submit', function(e) {
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
     `;
+    mo_modifie.innerHTML += `<option id="siage04">${passengerName}</option>`;
 }    
       if (reserveSeatSelect.value === "5") {
     resvplace05.style.backgroundColor = "red";
@@ -143,6 +150,7 @@ reserveForm.addEventListener('submit', function(e) {
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
     `;
+    mo_modifie.innerHTML += `<option id="siage05">${passengerName}</option>`;
 }  
       if (reserveSeatSelect.value === "6") {
     resvplace06.style.backgroundColor = "red";
@@ -152,6 +160,7 @@ reserveForm.addEventListener('submit', function(e) {
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
     `;
+    mo_modifie.innerHTML = `<option id="siage06">${passengerName}</option>`;
 }
         if (reserveSeatSelect.value === "7") {
     resvplace07.style.backgroundColor = "red";
@@ -161,6 +170,7 @@ reserveForm.addEventListener('submit', function(e) {
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
     `;
+    mo_modifie.innerHTML += `<option id="siage07">${passengerName}</option>`;
 }    
       if (reserveSeatSelect.value === "8") {
     resvplace08.style.backgroundColor = "red";
@@ -170,6 +180,7 @@ reserveForm.addEventListener('submit', function(e) {
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
     `;
+    mo_modifie.innerHTML += `<option id="siage08">${passengerName}</option>`;
 }   
        if (reserveSeatSelect.value === "9") {
     resvplace09.style.backgroundColor = "red";
@@ -179,6 +190,7 @@ reserveForm.addEventListener('submit', function(e) {
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
     `;
+    mo_modifie.innerHTML += `<option id="siage09">${passengerName}</option>`;
 }
 
   if (reserveSeatSelect.value === "10") {
@@ -189,6 +201,7 @@ reserveForm.addEventListener('submit', function(e) {
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
     `;
+    mo_modifie.innerHTML += `<option id="siage10">${passengerName}</option>`;
 }
 
   if (reserveSeatSelect.value === "11") {
@@ -199,6 +212,7 @@ reserveForm.addEventListener('submit', function(e) {
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
     `;
+    mo_modifie.innerHTML += `<option id="siage11">${passengerName}</option>`;
 }
 
   if (reserveSeatSelect.value === "12") {
@@ -209,6 +223,7 @@ reserveForm.addEventListener('submit', function(e) {
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
     `;
+    mo_modifie.innerHTML += `<option id="siage12">${passengerName}</option>`;
 }
 
   if (reserveSeatSelect.value === "13") {
@@ -219,6 +234,8 @@ reserveForm.addEventListener('submit', function(e) {
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
     `;
+    mo_modifie.innerHTML += `<option id="siage13">${passengerName}</option>`;
+
 }
 
 
@@ -230,6 +247,8 @@ reserveForm.addEventListener('submit', function(e) {
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
     `;
+     mo_modifie.innerHTML += `<option id="siage14">${passengerName}</option>`;
+
 } 
 
   if (reserveSeatSelect.value === "15") {
@@ -240,6 +259,8 @@ reserveForm.addEventListener('submit', function(e) {
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
     `;
+    mo_modifie.innerHTML += `<option id="siage15">${passengerName}</option>`;
+
 }
    
 
@@ -251,6 +272,8 @@ reserveForm.addEventListener('submit', function(e) {
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
     `;
+     mo_modifie.innerHTML += `<option id="siage16">${passengerName}</option>`;
+
 }
    
   if (reserveSeatSelect.value === "17") {
@@ -261,6 +284,8 @@ reserveForm.addEventListener('submit', function(e) {
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
     `;
+     mo_modifie.innerHTML += `<option id="siage17">${passengerName}</option>`;
+
 }
 
   if (reserveSeatSelect.value === "18") {
@@ -271,6 +296,8 @@ reserveForm.addEventListener('submit', function(e) {
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
     `;
+    mo_modifie.innerHTML += `<option id="siage18">${passengerName}</option>`;
+
 }
 
   if (reserveSeatSelect.value === "19") {
@@ -281,6 +308,8 @@ reserveForm.addEventListener('submit', function(e) {
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
     `;
+     mo_modifie.innerHTML += `<option id="siage19">${passengerName}</option>`;
+
 }
 
   if (reserveSeatSelect.value === "20") {
@@ -291,6 +320,8 @@ reserveForm.addEventListener('submit', function(e) {
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
     `;
+    mo_modifie.innerHTML += `<option id="siage20">${passengerName}</option>`;
+
 }
  
     
