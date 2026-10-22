@@ -4,7 +4,31 @@ const reserveNameInput = document.querySelector('#reserve-name');
 const reserveSeatSelect = document.querySelector('#reserve-seat');
 const reserveNotification = document.querySelector('#reserve-notification');
 const ticketPreview = document.querySelector('#ticket-preview');
-const NameRev = document.querySelector('#namerev')
+
+
+
+
+const NameRev01 = document.querySelector('#namerev01')
+const NameRev02 = document.querySelector('#namerev02')
+const NameRev03 = document.querySelector('#namerev03')
+const NameRev04 = document.querySelector('#namerev04')
+const NameRev05 = document.querySelector('#namerev05')
+const NameRev06 = document.querySelector('#namerev06')
+const NameRev07 = document.querySelector('#namerev07')
+const NameRev08 = document.querySelector('#namerev08')
+const NameRev09 = document.querySelector('#namerev09')
+const NameRev10 = document.querySelector('#namerev10')
+const NameRev11 = document.querySelector('#namerev11')
+const NameRev12 = document.querySelector('#namerev12')
+const NameRev13 = document.querySelector('#namerev13')
+const NameRev14 = document.querySelector('#namerev14')
+const NameRev15 = document.querySelector('#namerev15')
+const NameRev16 = document.querySelector('#namerev16')
+const NameRev17 = document.querySelector('#namerev17')
+const NameRev18 = document.querySelector('#namerev18')
+const NameRev19 = document.querySelector('#namerev19')
+const NameRev20 = document.querySelector('#namerev20')
+
 
 const resvplace01 = document.querySelector('#place01')
 const resvplace02 = document.querySelector('#place02')
@@ -76,8 +100,8 @@ reserveForm.addEventListener('submit', function(e) {
     `;
     if (reserveSeatSelect.value === "1") {
     resvplace01.style.backgroundColor = "red";
-    lib01.remove("span")
-    NameRev.innerHTML = `
+    lib01.remove("span");
+    NameRev01.innerHTML = `
         <div class="">
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
@@ -86,8 +110,8 @@ reserveForm.addEventListener('submit', function(e) {
 }    
       if (reserveSeatSelect.value === "2") {
     resvplace02.style.backgroundColor = "red";
-        lib01.remove("span")
-    `
+    lib02.remove("span");
+    NameRev02.innerHTML = `
         <div class="">
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
@@ -95,17 +119,17 @@ reserveForm.addEventListener('submit', function(e) {
 }   
       if (reserveSeatSelect.value === "3") {
     resvplace03.style.backgroundColor = "red";
-        lib01.remove("span")
-    `
+    lib03.remove("span");
+    NameRev03.innerHTML = `
         <div class="">
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
     `;
 }
       if (reserveSeatSelect.value === "4") {
-    resvplace04.style.backgroundColor = "red"=2
-     lib01.remove("span")
-    `
+    resvplace04.style.backgroundColor = "red";
+    lib01.remove("span");
+     NameRev04.innerHTML = `
         <div class="">
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
@@ -113,8 +137,8 @@ reserveForm.addEventListener('submit', function(e) {
 }    
       if (reserveSeatSelect.value === "5") {
     resvplace05.style.backgroundColor = "red";
-     lib01.remove("span")
-    `
+    lib05.remove("span");
+     NameRev05.innerHTML = `
         <div class="">
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
@@ -122,8 +146,8 @@ reserveForm.addEventListener('submit', function(e) {
 }  
       if (reserveSeatSelect.value === "6") {
     resvplace06.style.backgroundColor = "red";
-     lib01.remove("span")
-    `
+    lib06.remove("span");
+     NameRev06.innerHTML = `
         <div class="">
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
@@ -131,8 +155,8 @@ reserveForm.addEventListener('submit', function(e) {
 }
         if (reserveSeatSelect.value === "7") {
     resvplace07.style.backgroundColor = "red";
-     lib01.remove("span")
-    `
+    lib07.remove("span");
+     NameRev07.innerHTML = `
         <div class="">
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
@@ -140,8 +164,8 @@ reserveForm.addEventListener('submit', function(e) {
 }    
       if (reserveSeatSelect.value === "8") {
     resvplace08.style.backgroundColor = "red";
-     lib01.remove("span")
-    `
+    lib08.remove("span");
+     NameRev08.innerHTML = `
         <div class="">
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
@@ -149,8 +173,8 @@ reserveForm.addEventListener('submit', function(e) {
 }   
        if (reserveSeatSelect.value === "9") {
     resvplace09.style.backgroundColor = "red";
-     lib01.remove("span")
-    `
+    lib09.remove("span");
+     NameRev09.innerHTML = `
         <div class="">
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
@@ -159,8 +183,8 @@ reserveForm.addEventListener('submit', function(e) {
 
   if (reserveSeatSelect.value === "10") {
     resvplace10.style.backgroundColor = "red";
-     lib01.remove("span")
-    `
+    lib09.remove("span");
+     NameRev10.innerHTML = `
         <div class="">
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
@@ -169,8 +193,8 @@ reserveForm.addEventListener('submit', function(e) {
 
   if (reserveSeatSelect.value === "11") {
     resvplace11.style.backgroundColor = "red";
-     lib01.remove("span")
-    `
+    lib11.remove("span");
+     NameRev11.innerHTML = `
         <div class="">
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
@@ -179,8 +203,8 @@ reserveForm.addEventListener('submit', function(e) {
 
   if (reserveSeatSelect.value === "12") {
     resvplace12.style.backgroundColor = "red";
-     lib01.remove("span")
-    `
+    lib12.remove("span");
+     NameRev12.innerHTML = `
         <div class="">
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
@@ -189,8 +213,8 @@ reserveForm.addEventListener('submit', function(e) {
 
   if (reserveSeatSelect.value === "13") {
     resvplace13.style.backgroundColor = "red";
-     lib01.remove("span")
-    `
+    lib13.remove("span");
+     NameRev13.innerHTML = `
         <div class="">
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
@@ -200,8 +224,8 @@ reserveForm.addEventListener('submit', function(e) {
 
   if (reserveSeatSelect.value === "14") {
     resvplace14.style.backgroundColor = "red";
-     lib01.remove("span")
-    `
+    lib14.remove("span");
+     NameRev14.innerHTML = `
         <div class="">
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
@@ -210,8 +234,8 @@ reserveForm.addEventListener('submit', function(e) {
 
   if (reserveSeatSelect.value === "15") {
     resvplace15.style.backgroundColor = "red";
-     lib01.remove("span")
-    `
+    lib15.remove("span");
+     NameRev15.innerHTML = `
         <div class="">
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
@@ -221,8 +245,8 @@ reserveForm.addEventListener('submit', function(e) {
 
   if (reserveSeatSelect.value === "16") {
     resvplace16.style.backgroundColor = "red";
-     lib01.remove("span")
-    `
+    lib16.remove("span");
+     NameRev16.innerHTML = `
         <div class="">
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
@@ -231,8 +255,8 @@ reserveForm.addEventListener('submit', function(e) {
    
   if (reserveSeatSelect.value === "17") {
     resvplace17.style.backgroundColor = "red";
-     lib01.remove("span")
-    `
+    lib17.remove("span");
+     NameRev17.innerHTML = `
         <div class="">
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
@@ -241,8 +265,8 @@ reserveForm.addEventListener('submit', function(e) {
 
   if (reserveSeatSelect.value === "18") {
     resvplace18.style.backgroundColor = "red";
-     lib01.remove("span")
-    `
+    lib18.remove("span");
+     NameRev18.innerHTML = `
         <div class="">
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
@@ -251,8 +275,8 @@ reserveForm.addEventListener('submit', function(e) {
 
   if (reserveSeatSelect.value === "19") {
     resvplace19.style.backgroundColor = "red";
-     lib01.remove("span")
-    `
+    lib19.remove("span");
+     NameRev19.innerHTML = `
         <div class="">
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
@@ -261,8 +285,8 @@ reserveForm.addEventListener('submit', function(e) {
 
   if (reserveSeatSelect.value === "20") {
     resvplace20.style.backgroundColor = "red";
-     lib01.remove("span")
-    `
+    lib20.remove("span");
+     NameRev20.innerHTML = `
         <div class="">
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
