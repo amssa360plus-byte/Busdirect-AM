@@ -102,7 +102,7 @@ reserveForm.addEventListener('submit', function(e) {
     }
     
 
-    
+
     const id = selectedSeat.padStart(2, '0');
     const targetSeat = document.querySelector(`#place${id}`);
 
@@ -208,7 +208,7 @@ reserveForm.addEventListener('submit', function(e) {
        if (reserveSeatSelect.value === "9") {
     resvplace09.style.backgroundColor = "red";
     lib09.remove("span");
-     NameRev09.innerHTML = `
+     NameRev09.innerHTML =`
         <div class="">
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
