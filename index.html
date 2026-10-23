@@ -57,9 +57,9 @@
                     <div class="flex items-center gap-2">
                         <span class="p-1 bg-gray-50 text-600 rounded-lg"><i class="fa-solid fa-bus-simple"></i>
                         </span>
-                        <span>Poste Conducteur</span>
+                        <span>place safi to marackech</span>
                     </div>
-                    <span class="text-xs text-slate-400">Devant</span>
+                    <span class="text-xs text-slate-400">in front</span>
                 </div>
 
                 <div id="seats-grid" class="grid grid-cols-4 gap-3">
@@ -268,7 +268,7 @@
                         </select>
                         <button type="submit" id="reserve-submit"
                             class="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-gray-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-gray-600 active:bg-teal-600 disabled:cursor-not-allowed disabled:opacity-50">
-                            Reserve seat — 80 DH
+                            Reserve seat passenger80 DH
                         </button>
                     </form>
                     <div id="reserve-notification" class="mt-3" aria-live="polite"></div>
@@ -284,6 +284,7 @@
                         <select id="modify-passenger" name="modify-passenger"
                             class="mb-3 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 pr-9 text-sm">
                             <option value="">Select a passenger…</option>
+
                         </select>
                         <label for="modify-name" class="mb-1 block text-sm font-semibold text-slate-700">Passenger
                             name</label>
@@ -297,8 +298,9 @@
                             class="mb-3 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 pr-9 text-sm">
                             <option value="">No reservation selected</option>
                         </select>
-                        <button type="submit"
+                        <button type="modify-botton"
                             class="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-slate-800 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-slate-700 active:bg-slate-900 disabled:cursor-not-allowed disabled:opacity-50">
+                            <div id="switch-notification" class="mt-3" aria-live="polite"></div>
                             <i class="fa-solid fa-square-check"></i>
                             Save changes
                         </button>
@@ -314,7 +316,8 @@
                             class="mb-1 block text-sm font-semibold text-slate-700">Passenger</label>
                         <select id="cancel-passenger" name="cancel-passenger"
                             class="mb-3 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 pr-9 text-sm">
-                            <option value="">Select a passenger…</option>
+                            <option value="" >Select a passenger…</option>
+                           
                         </select>
                         <p id="cancel-details" class="mb-3 text-sm text-slate-600 hidden"></p>
                         <button type="submit"

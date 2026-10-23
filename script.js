@@ -93,8 +93,21 @@ reserveForm.addEventListener('submit', function(e) {
     }
     
 
+    
+
     if (passengerName === '') {
         reserveNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">Please enter passenger name!</p>';
+        ticketPreview.classList.add('hidden');
+        return;
+    }
+    
+
+    
+    const id = selectedSeat.padStart(2, '0');
+    const targetSeat = document.querySelector(`#place${id}`);
+
+    if (targetSeat.style.backgroundColor === "red") {
+        reserveNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">the place resrvie</p>';
         ticketPreview.classList.add('hidden');
         return;
     }
@@ -337,3 +350,26 @@ reserveForm.addEventListener('submit', function(e) {
     
     ticketPreview.classList.remove('hidden');
 });
+
+
+
+
+
+
+
+
+
+
+const switch_notification = document.querySelector('#switch-notification');
+
+const modifie = document.querySelector('#modify-botton');
+
+
+modifie.addEventListener('modify-botton', function(){
+    e.preventDefault();
+    const namemo = document.querySelector('#modify-name')
+     if (namemo === '') {
+        switch_notification.innerHTML = '<p class="text-red-500 text-sm font-medium">Please enter passenger name!</p>'
+        return;
+    }
+})
