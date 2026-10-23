@@ -113,120 +113,140 @@ reserveForm.addEventListener('submit', function(e) {
         lib01.remove();
         NameRev01.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="1">${passengerName} (Seat 1)</option>`;
+        cancel.innerHTML +=  `<option value="1">${passengerName} (Seat 1)</option>`;
     }    
     if (reserveSeatSelect.value === "2") {
         resvplace02.style.backgroundColor = "red";
         lib02.remove();
         NameRev02.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="2">${passengerName} (Seat 2)</option>`;
+        cancel.innerHTML +=  `<option value="2">${passengerName} (Seat 2)</option>`;
     }   
     if (reserveSeatSelect.value === "3") {
         resvplace03.style.backgroundColor = "red";
         lib03.remove();
         NameRev03.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="3">${passengerName} (Seat 3)</option>`;
+        cancel.innerHTML +=  `<option value="3">${passengerName} (Seat 3)</option>`;
     }
     if (reserveSeatSelect.value === "4") {
         resvplace04.style.backgroundColor = "red";
         lib04.remove();
         NameRev04.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="4">${passengerName} (Seat 4)</option>`;
+        cancel.innerHTML +=  `<option value="1">${passengerName} (Seat 4)</option>`;
     }    
     if (reserveSeatSelect.value === "5") {
         resvplace05.style.backgroundColor = "red";
         lib05.remove();
         NameRev05.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="5">${passengerName} (Seat 5)</option>`;
+        cancel.innerHTML +=  `<option value="1">${passengerName} (Seat 5)</option>`;
     }  
     if (reserveSeatSelect.value === "6") {
         resvplace06.style.backgroundColor = "red";
         lib06.remove();
         NameRev06.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="6">${passengerName} (Seat 6)</option>`;
+        cancel.innerHTML +=  `<option value="1">${passengerName} (Seat 6)</option>`;
     }
     if (reserveSeatSelect.value === "7") {
         resvplace07.style.backgroundColor = "red";
         lib07.remove();
         NameRev07.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="7">${passengerName} (Seat 7)</option>`;
+        cancel.innerHTML +=  `<option value="7">${passengerName} (Seat 7)</option>`;
     }    
     if (reserveSeatSelect.value === "8") {
         resvplace08.style.backgroundColor = "red";
         lib08.remove();
         NameRev08.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="8">${passengerName} (Seat 8)</option>`;
+        cancel.innerHTML +=  `<option value="8">${passengerName} (Seat 8)</option>`;
     }   
     if (reserveSeatSelect.value === "9") {
         resvplace09.style.backgroundColor = "red";
         lib09.remove();
         NameRev09.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="9">${passengerName} (Seat 9)</option>`;
+        cancel.innerHTML +=  `<option value="9">${passengerName} (Seat 9)</option>`;
     }
     if (reserveSeatSelect.value === "10") {
         resvplace10.style.backgroundColor = "red";
         lib10.remove();
         NameRev10.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="10">${passengerName} (Seat 10)</option>`;
+        cancel.innerHTML +=  `<option value="10">${passengerName} (Seat 10)</option>`;
     }
     if (reserveSeatSelect.value === "11") {
         resvplace11.style.backgroundColor = "red";
         lib11.remove();
         NameRev11.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="11">${passengerName} (Seat 11)</option>`;
+        cancel.innerHTML +=  `<option value="11">${passengerName} (Seat 11)</option>`;
     }
     if (reserveSeatSelect.value === "12") {
         resvplace12.style.backgroundColor = "red";
         lib12.remove();
         NameRev12.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="12">${passengerName} (Seat 12)</option>`;
+        cancel.innerHTML +=  `<option value="12">${passengerName} (Seat 12)</option>`;
     }
     if (reserveSeatSelect.value === "13") {
         resvplace13.style.backgroundColor = "red";
         lib13.remove();
         NameRev13.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="13">${passengerName} (Seat 13)</option>`;
+        cancel.innerHTML +=  `<option value="13">${passengerName} (Seat 13)</option>`;
     }
     if (reserveSeatSelect.value === "14") {
         resvplace14.style.backgroundColor = "red";
         lib14.remove();
         NameRev14.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="14">${passengerName} (Seat 14)</option>`;
+        cancel.innerHTML +=  `<option value="14">${passengerName} (Seat 14)</option>`;
     } 
     if (reserveSeatSelect.value === "15") {
         resvplace15.style.backgroundColor = "red";
         lib15.remove();
         NameRev15.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="15">${passengerName} (Seat 15)</option>`;
+        cancel.innerHTML +=  `<option value="15">${passengerName} (Seat 15)</option>`;
     }
     if (reserveSeatSelect.value === "16") {
         resvplace16.style.backgroundColor = "red";
         lib16.remove();
         NameRev16.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="16">${passengerName} (Seat 16)</option>`;
+        cancel.innerHTML +=  `<option value="16">${passengerName} (Seat 16)</option>`;
     }
     if (reserveSeatSelect.value === "17") {
         resvplace17.style.backgroundColor = "red";
         lib17.remove();
         NameRev17.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="17">${passengerName} (Seat 17)</option>`;
+        cancel.innerHTML +=  `<option value="17">${passengerName} (Seat 17)</option>`;
     }
     if (reserveSeatSelect.value === "18") {
         resvplace18.style.backgroundColor = "red";
         lib18.remove();
         NameRev18.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="18">${passengerName} (Seat 18)</option>`;
+        cancel.innerHTML +=  `<option value="18">${passengerName} (Seat 18)</option>`;
     }
     if (reserveSeatSelect.value === "19") {
         resvplace19.style.backgroundColor = "red";
         lib19.remove();
         NameRev19.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="19">${passengerName} (Seat 19)</option>`;
+        cancel.innerHTML +=  `<option value="19">${passengerName} (Seat 19)</option>`;
     }
     if (reserveSeatSelect.value === "20") {
         resvplace20.style.backgroundColor = "red";
         lib20.remove();
         NameRev20.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="20">${passengerName} (Seat 20)</option>`;
+        cancel.innerHTML +=  `<option value="20">${passengerName} (Seat 20)</option>`;
     }
     
     ticketPreview.classList.remove('hidden');
@@ -236,6 +256,8 @@ const modifyPassengerSelect = document.querySelector('#modify-passenger');
 const modifyNameInput = document.querySelector('#modify-name');
 const modifySeatSelect = document.querySelector('#modify-seat');
 const modifyNotification = document.querySelector('#modify-notification');
+
+const cancel = document.querySelector('#cancel-passenger')
 
 modifyForm.addEventListener('submit', function(e) {
     e.preventDefault(); 
@@ -287,6 +309,7 @@ modifyForm.addEventListener('submit', function(e) {
         if (optionToUpdate) {
             optionToUpdate.value = newSeat;
             optionToUpdate.textContent = `${newName} (Seat ${newSeat})`;
+           
         }
 
         modifyNotification.innerHTML = '<p class="text-teal-600 text-sm font-medium">Seat and name updated successfully! 🎉</p>';
@@ -298,3 +321,4 @@ modifyForm.addEventListener('submit', function(e) {
         modifyNotification.innerHTML = '<p class="text-teal-600 text-sm font-medium">Modification saved successfully</p>';
     }
 });
+
