@@ -231,7 +231,6 @@ reserveForm.addEventListener('submit', function(e) {
     
     ticketPreview.classList.remove('hidden');
 });
-
 const modifyForm = document.querySelector('#modify-form');
 const modifyPassengerSelect = document.querySelector('#modify-passenger');
 const modifyNameInput = document.querySelector('#modify-name');
@@ -241,10 +240,11 @@ const modifyNotification = document.querySelector('#modify-notification');
 modifyForm.addEventListener('submit', function(e) {
     e.preventDefault(); 
     
-    const selectedSeatToModify = modifyPassengerSelect.value;
+    const oldSeat = modifyPassengerSelect.value;
     const newName = modifyNameInput.value.trim();
+    const newSeat = modifySeatSelect.value;     
 
-    if (selectedSeatToModify === '') {
+    if (oldSeat === '') {
         modifyNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">Please select a passenger to modify!</p>';
         return;
     }
@@ -254,12 +254,47 @@ modifyForm.addEventListener('submit', function(e) {
         return;
     }
 
-    const id = selectedSeatToModify.padStart(2, '0');
-    const targetNameRev = document.querySelector(`#namerev${id}`);
+    const oldId = oldSeat.padStart(2, '0');
+    const targetNameRev = document.querySelector(`#namerev${oldId}`);
+
+    if (newSeat !== '' && newSeat !== oldSeat) {
+        const newId = newSeat.padStart(2, '0');
+        const newLibreEl = document.querySelector(`#libre${newId}`);
+
+        if (!newLibreEl) {
+            modifyNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">This new seat is already reserved!</p>';
+            return;
+        }
+
+        const oldPlace = document.querySelector(`#place${oldId}`);
+        oldPlace.style.backgroundColor = "";
+        targetNameRev.innerHTML = "";
+        
+        const oldLibreContainer = document.createElement('span');
+        oldLibreContainer.className = "text-xs text-slate-400 font-medium";
+        oldLibreContainer.id = `libre${oldId}`;
+        oldLibreContainer.textContent = "Libre";
+        oldPlace.appendChild(oldLibreContainer);
+
+        const newPlace = document.querySelector(`#place${newId}`);
+        newPlace.style.backgroundColor = "red";
+        newLibreEl.remove();
+
+        const newNameRev = document.querySelector(`#namerev${newId}`);
+        newNameRev.innerHTML = `<div class=""><p class="text-slate-700">${newName}</p></div>`;
+
+        const optionToUpdate = modifyPassengerSelect.querySelector(`option[value="${oldSeat}"]`);
+        if (optionToUpdate) {
+            optionToUpdate.value = newSeat;
+            optionToUpdate.textContent = `${newName} (Seat ${newSeat})`;
+        }
+
+        modifyNotification.innerHTML = '<p class="text-teal-600 text-sm font-medium">Seat and name updated successfully! 🎉</p>';
+        return;
+    }
 
     if (targetNameRev) {
         targetNameRev.innerHTML = `<div class=""><p class="text-slate-700">${newName}</p></div>`;
+        modifyNotification.innerHTML = '<p class="text-teal-600 text-sm font-medium">Modification saved successfully</p>';
     }
-
-    modifyNotification.innerHTML = '<p class="text-teal-600 text-sm font-medium">Modification saved successfully</p>';
 });
