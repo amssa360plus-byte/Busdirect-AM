@@ -83,17 +83,6 @@ reserveForm.addEventListener('submit', function(e) {
     e.preventDefault(); 
     const passengerName = reserveNameInput.value.trim();
     const selectedSeat = reserveSeatSelect.value;
-    const id = selectedSeat.padStart(2, '0');
-    const targetSeat = document.querySelector(`#place${id}`);
-
-    if (targetSeat.style.backgroundColor === "red") {
-        reserveNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">the place resrvie</p>';
-        ticketPreview.classList.add('hidden');
-        return;
-    }
-    
-
-    
 
     if (passengerName === '') {
         reserveNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">Please enter passenger name!</p>';
@@ -101,8 +90,6 @@ reserveForm.addEventListener('submit', function(e) {
         return;
     }
     
-
-
     const id = selectedSeat.padStart(2, '0');
     const targetSeat = document.querySelector(`#place${id}`);
 
@@ -208,7 +195,7 @@ reserveForm.addEventListener('submit', function(e) {
        if (reserveSeatSelect.value === "9") {
     resvplace09.style.backgroundColor = "red";
     lib09.remove("span");
-     NameRev09.innerHTML =`
+     NameRev09.innerHTML = `
         <div class="">
             <p class="text-slate-700"> ${passengerName}</p>
         </div>
@@ -361,12 +348,10 @@ reserveForm.addEventListener('submit', function(e) {
 
 
 const switch_notification = document.querySelector('#switch-notification');
+const modifie = document.querySelector('#change')
 
-const modifie = document.querySelector('#modify-botton');
-
-
-modifie.addEventListener('modify-botton', function(){
-    e.preventDefault();
+modifie.addEventListener('submit', h => {
+    h.preventDefault();
     const namemo = document.querySelector('#modify-name')
      if (namemo === '') {
         switch_notification.innerHTML = '<p class="text-red-500 text-sm font-medium">Please enter passenger name!</p>'
