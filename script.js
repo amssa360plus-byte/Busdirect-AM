@@ -1,5 +1,7 @@
 let resirvation = [];
-let price = 80
+let price = 80;
+
+
 const reserveForm = document.querySelector('#reserve-form');
 const reserveNameInput = document.querySelector('#reserve-name');
 const reserveSeatSelect = document.querySelector('#reserve-seat');
@@ -267,9 +269,10 @@ reserveForm.addEventListener('submit', function(e) {
         mo_modifie.innerHTML += `<option value="20">${passengerName} (Seat 20)</option>`;
         cancel.innerHTML +=  `<option value="20">${passengerName} (Seat 20)</option>`;
         resirvation.push(price)
+        
     }
 
-    
+
     
     ticketPreview.classList.remove('hidden');
 });
@@ -378,6 +381,7 @@ cancelForm.addEventListener('submit', function(e) {
     const modifyPassengerSelect = document.querySelector('#modify-passenger');
     const modifyOption = modifyPassengerSelect.querySelector(`option[value="${selectedSeat}"]`);
     if (modifyOption) {
+        confirm
         modifyOption.remove();
     }
 
@@ -389,8 +393,10 @@ cancelForm.addEventListener('submit', function(e) {
     cancelNotification.innerHTML = '<p class="text-teal-600 text-sm font-medium">Reservation cancelled successfully!</p>';
     cancelPassengerSelect.value = '';
 });
+let total = 0
+for(let i = 0 ; i < resirvation.length ; i++){
+    total += resirvation[i]
+}
 
 
-const livre = document.querySelectorAll()
-selectedin
 
