@@ -1,4 +1,5 @@
 let resirvation = [];
+let price = 80
 const reserveForm = document.querySelector('#reserve-form');
 const reserveNameInput = document.querySelector('#reserve-name');
 const reserveSeatSelect = document.querySelector('#reserve-seat');
@@ -70,7 +71,6 @@ const lib20 = document.querySelector('#libre20');
 
 const mo_modifie = document.querySelector('#modify-passenger');
 
-// --- Événement de Réservation ---
 reserveForm.addEventListener('submit', function(e) {
     e.preventDefault(); 
     const passengerName = reserveNameInput.value.trim();
@@ -114,6 +114,7 @@ reserveForm.addEventListener('submit', function(e) {
         NameRev01.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="1">${passengerName} (Seat 1)</option>`;
         cancel.innerHTML +=  `<option value="1">${passengerName} (Seat 1)</option>`;
+        resirvation.push(price)
     }    
     if (reserveSeatSelect.value === "2") {
         resvplace02.style.backgroundColor = "red";
@@ -121,6 +122,7 @@ reserveForm.addEventListener('submit', function(e) {
         NameRev02.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="2">${passengerName} (Seat 2)</option>`;
         cancel.innerHTML +=  `<option value="2">${passengerName} (Seat 2)</option>`;
+        resirvation.push(price)
     }   
     if (reserveSeatSelect.value === "3") {
         resvplace03.style.backgroundColor = "red";
@@ -128,6 +130,7 @@ reserveForm.addEventListener('submit', function(e) {
         NameRev03.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="3">${passengerName} (Seat 3)</option>`;
         cancel.innerHTML +=  `<option value="3">${passengerName} (Seat 3)</option>`;
+        resirvation.push(price)
     }
     if (reserveSeatSelect.value === "4") {
         resvplace04.style.backgroundColor = "red";
@@ -135,6 +138,7 @@ reserveForm.addEventListener('submit', function(e) {
         NameRev04.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="4">${passengerName} (Seat 4)</option>`;
         cancel.innerHTML +=  `<option value="1">${passengerName} (Seat 4)</option>`;
+        resirvation.push(price)
     }    
     if (reserveSeatSelect.value === "5") {
         resvplace05.style.backgroundColor = "red";
@@ -142,6 +146,7 @@ reserveForm.addEventListener('submit', function(e) {
         NameRev05.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="5">${passengerName} (Seat 5)</option>`;
         cancel.innerHTML +=  `<option value="1">${passengerName} (Seat 5)</option>`;
+        resirvation.push(price)
     }  
     if (reserveSeatSelect.value === "6") {
         resvplace06.style.backgroundColor = "red";
@@ -149,6 +154,7 @@ reserveForm.addEventListener('submit', function(e) {
         NameRev06.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="6">${passengerName} (Seat 6)</option>`;
         cancel.innerHTML +=  `<option value="1">${passengerName} (Seat 6)</option>`;
+        resirvation.push(price)
     }
     if (reserveSeatSelect.value === "7") {
         resvplace07.style.backgroundColor = "red";
@@ -156,6 +162,7 @@ reserveForm.addEventListener('submit', function(e) {
         NameRev07.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="7">${passengerName} (Seat 7)</option>`;
         cancel.innerHTML +=  `<option value="7">${passengerName} (Seat 7)</option>`;
+        resirvation.push(price)
     }    
     if (reserveSeatSelect.value === "8") {
         resvplace08.style.backgroundColor = "red";
@@ -163,6 +170,7 @@ reserveForm.addEventListener('submit', function(e) {
         NameRev08.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="8">${passengerName} (Seat 8)</option>`;
         cancel.innerHTML +=  `<option value="8">${passengerName} (Seat 8)</option>`;
+        resirvation.push(price)
     }   
     if (reserveSeatSelect.value === "9") {
         resvplace09.style.backgroundColor = "red";
@@ -170,6 +178,7 @@ reserveForm.addEventListener('submit', function(e) {
         NameRev09.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="9">${passengerName} (Seat 9)</option>`;
         cancel.innerHTML +=  `<option value="9">${passengerName} (Seat 9)</option>`;
+        resirvation.push(price)
     }
     if (reserveSeatSelect.value === "10") {
         resvplace10.style.backgroundColor = "red";
@@ -177,6 +186,7 @@ reserveForm.addEventListener('submit', function(e) {
         NameRev10.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="10">${passengerName} (Seat 10)</option>`;
         cancel.innerHTML +=  `<option value="10">${passengerName} (Seat 10)</option>`;
+        resirvation.push(price)
     }
     if (reserveSeatSelect.value === "11") {
         resvplace11.style.backgroundColor = "red";
@@ -184,6 +194,7 @@ reserveForm.addEventListener('submit', function(e) {
         NameRev11.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="11">${passengerName} (Seat 11)</option>`;
         cancel.innerHTML +=  `<option value="11">${passengerName} (Seat 11)</option>`;
+        resirvation.push(price)
     }
     if (reserveSeatSelect.value === "12") {
         resvplace12.style.backgroundColor = "red";
@@ -198,6 +209,7 @@ reserveForm.addEventListener('submit', function(e) {
         NameRev13.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="13">${passengerName} (Seat 13)</option>`;
         cancel.innerHTML +=  `<option value="13">${passengerName} (Seat 13)</option>`;
+        resirvation.push(price)
     }
     if (reserveSeatSelect.value === "14") {
         resvplace14.style.backgroundColor = "red";
@@ -205,6 +217,7 @@ reserveForm.addEventListener('submit', function(e) {
         NameRev14.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="14">${passengerName} (Seat 14)</option>`;
         cancel.innerHTML +=  `<option value="14">${passengerName} (Seat 14)</option>`;
+        resirvation.push(price)
     } 
     if (reserveSeatSelect.value === "15") {
         resvplace15.style.backgroundColor = "red";
@@ -212,6 +225,7 @@ reserveForm.addEventListener('submit', function(e) {
         NameRev15.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="15">${passengerName} (Seat 15)</option>`;
         cancel.innerHTML +=  `<option value="15">${passengerName} (Seat 15)</option>`;
+        resirvation.push(price)
     }
     if (reserveSeatSelect.value === "16") {
         resvplace16.style.backgroundColor = "red";
@@ -219,6 +233,7 @@ reserveForm.addEventListener('submit', function(e) {
         NameRev16.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="16">${passengerName} (Seat 16)</option>`;
         cancel.innerHTML +=  `<option value="16">${passengerName} (Seat 16)</option>`;
+        resirvation.push(price)
     }
     if (reserveSeatSelect.value === "17") {
         resvplace17.style.backgroundColor = "red";
@@ -226,6 +241,7 @@ reserveForm.addEventListener('submit', function(e) {
         NameRev17.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="17">${passengerName} (Seat 17)</option>`;
         cancel.innerHTML +=  `<option value="17">${passengerName} (Seat 17)</option>`;
+        resirvation.push(price)
     }
     if (reserveSeatSelect.value === "18") {
         resvplace18.style.backgroundColor = "red";
@@ -233,6 +249,8 @@ reserveForm.addEventListener('submit', function(e) {
         NameRev18.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="18">${passengerName} (Seat 18)</option>`;
         cancel.innerHTML +=  `<option value="18">${passengerName} (Seat 18)</option>`;
+        resirvation.push(price)
+    
     }
     if (reserveSeatSelect.value === "19") {
         resvplace19.style.backgroundColor = "red";
@@ -240,6 +258,7 @@ reserveForm.addEventListener('submit', function(e) {
         NameRev19.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="19">${passengerName} (Seat 19)</option>`;
         cancel.innerHTML +=  `<option value="19">${passengerName} (Seat 19)</option>`;
+        resirvation.push(price)
     }
     if (reserveSeatSelect.value === "20") {
         resvplace20.style.backgroundColor = "red";
@@ -247,7 +266,10 @@ reserveForm.addEventListener('submit', function(e) {
         NameRev20.innerHTML = `<div class=""><p class="text-slate-700">${passengerName}</p></div>`;
         mo_modifie.innerHTML += `<option value="20">${passengerName} (Seat 20)</option>`;
         cancel.innerHTML +=  `<option value="20">${passengerName} (Seat 20)</option>`;
+        resirvation.push(price)
     }
+
+    
     
     ticketPreview.classList.remove('hidden');
 });
@@ -321,4 +343,54 @@ modifyForm.addEventListener('submit', function(e) {
         modifyNotification.innerHTML = '<p class="text-teal-600 text-sm font-medium">Modification saved successfully</p>';
     }
 });
+
+const cancelForm = document.querySelector('#cancel-form');
+const cancelPassengerSelect = document.querySelector('#cancel-passenger');
+const cancelNotification = document.querySelector('#cancel-notification');
+
+cancelForm.addEventListener('submit', function(e) {
+    e.preventDefault(); 
+    const selectedSeat = cancelPassengerSelect.value;
+
+    if (selectedSeat === '') {
+        cancelNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">Please select a passenger to cancel!</p>';
+        return;
+    }
+
+    const id = selectedSeat.padStart(2, '0');
+    const targetSeat = document.querySelector(`#place${id}`);
+    const targetNameRev = document.querySelector(`#namerev${id}`);
+
+    if (targetSeat.style.backgroundColor !== "red") {
+        cancelNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">This place is not reserved</p>';
+        return;
+    }
+
+    targetSeat.style.backgroundColor = "";
+    targetNameRev.innerHTML = "";
+
+    const libreContainer = document.createElement('span');
+    libreContainer.className = "seat-libre";
+    libreContainer.id = `libre${id}`;
+    libreContainer.textContent = "Libre";
+    targetSeat.appendChild(libreContainer);
+
+    const modifyPassengerSelect = document.querySelector('#modify-passenger');
+    const modifyOption = modifyPassengerSelect.querySelector(`option[value="${selectedSeat}"]`);
+    if (modifyOption) {
+        modifyOption.remove();
+    }
+
+    const cancelOption = cancelPassengerSelect.querySelector(`option[value="${selectedSeat}"]`);
+    if (cancelOption) {
+        cancelOption.remove();
+    }
+
+    cancelNotification.innerHTML = '<p class="text-teal-600 text-sm font-medium">Reservation cancelled successfully!</p>';
+    cancelPassengerSelect.value = '';
+});
+
+
+const livre = document.querySelectorAll()
+selectedin
 
