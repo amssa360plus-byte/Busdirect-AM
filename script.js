@@ -1,7 +1,7 @@
 let resirvation = [];
 let price = 80;
-
-
+let final
+let finaltotal
 const reserveForm = document.querySelector('#reserve-form');
 const reserveNameInput = document.querySelector('#reserve-name');
 const reserveSeatSelect = document.querySelector('#reserve-seat');
@@ -275,12 +275,14 @@ reserveForm.addEventListener('submit', function(e) {
 
     
     ticketPreview.classList.remove('hidden');
-    const totalNotification = document.querySelector('.TOTAL')
+    const totalNotification = document.querySelector('.total-form')
     let total = 0
     for(let i = 0 ; i < resirvation.length ; i++){
     total += resirvation[i]
-    totalNotification.innerHTML = `<span class = "alltotal">${total}</span>`
-}
+    
+    }
+    final = total;
+    totalNotification.innerHTML = `<span class = "alltotal">${final}</span>`
 });
 const modifyForm = document.querySelector('#modify-form');
 const modifyPassengerSelect = document.querySelector('#modify-passenger');
@@ -343,7 +345,7 @@ modifyForm.addEventListener('submit', function(e) {
            
         }
 
-        modifyNotification.innerHTML = '<p class="text-teal-600 text-sm font-medium">Seat and name updated successfully! 🎉</p>';
+        modifyNotification.innerHTML = '<p class="text-teal-600 text-sm font-medium">Seat and name updated successfully!</p>';
         return;
     }
 
@@ -388,13 +390,14 @@ cancelForm.addEventListener('submit', function(e) {
     const modifyOption = modifyPassengerSelect.querySelector(`option[value="${selectedSeat}"]`);
     if (modifyOption) {
         modifyOption.remove();
+        resirvation.splice(0,1)
     }
 
     const cancelOption = cancelPassengerSelect.querySelector(`option[value="${selectedSeat}"]`);
     if (cancelOption) {
         cancelOption.remove();
     }
-
+        
     cancelNotification.innerHTML = '<p class="text-teal-600 text-sm font-medium">Reservation cancelled successfully!</p>';
     cancelPassengerSelect.value = '';
 });
