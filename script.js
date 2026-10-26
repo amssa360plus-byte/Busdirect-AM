@@ -275,6 +275,12 @@ reserveForm.addEventListener('submit', function(e) {
 
     
     ticketPreview.classList.remove('hidden');
+    const totalNotification = document.querySelector('.TOTAL')
+    let total = 0
+    for(let i = 0 ; i < resirvation.length ; i++){
+    total += resirvation[i]
+    totalNotification.innerHTML = `<span class = "alltotal">${total}</span>`
+}
 });
 const modifyForm = document.querySelector('#modify-form');
 const modifyPassengerSelect = document.querySelector('#modify-passenger');
@@ -381,7 +387,6 @@ cancelForm.addEventListener('submit', function(e) {
     const modifyPassengerSelect = document.querySelector('#modify-passenger');
     const modifyOption = modifyPassengerSelect.querySelector(`option[value="${selectedSeat}"]`);
     if (modifyOption) {
-        confirm
         modifyOption.remove();
     }
 
@@ -393,10 +398,7 @@ cancelForm.addEventListener('submit', function(e) {
     cancelNotification.innerHTML = '<p class="text-teal-600 text-sm font-medium">Reservation cancelled successfully!</p>';
     cancelPassengerSelect.value = '';
 });
-let total = 0
-for(let i = 0 ; i < resirvation.length ; i++){
-    total += resirvation[i]
-}
+
 
 
 
