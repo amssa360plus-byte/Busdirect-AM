@@ -265,7 +265,10 @@ reserveForm.addEventListener('submit', function(e) {
     
     }
     final = total;
-    ouccepe.innerHTML = `<span id="oucupe">${resirvation.length}</span>`
+    ouccepe.innerHTML = `<div class="dispo">
+                    <span>oucupe: </span>
+                    <span id="oucupe">${resirvation.length}</span>
+                </div>`
     totalNotification.innerHTML = `<span class = "alltotal">${final}</span>`
 });
 const modifyForm = document.querySelector('#modify-form');
@@ -385,11 +388,16 @@ cancelForm.addEventListener('submit', function(e) {
     if(resirvation.length > 0){
         resirvation.pop()
     }
+    const ouccepe = document.querySelector('.dispo')
     const totalNotification = document.querySelector('.total-form')
     let total = 0 ;
     for(let i = 0 ; i < resirvation.length ; i++){
         total += resirvation[i];
     }
+    ouccepe.innerHTML = `<div class="dispo">
+                    <span>oucupe: </span>
+                    <span id="oucupe">${resirvation.length}</span>
+                </div>`
     totalNotification.innerHTML = `<span class = "font-weight: bold; alltotal">${total}</span>`
     
 
