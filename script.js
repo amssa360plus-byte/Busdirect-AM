@@ -82,7 +82,7 @@ reserveForm.addEventListener('submit', function(e) {
     let selectedSeat = reserveSeatSelect.value;
 
     if (passengerName === '') {
-    reserveNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">Please enter passenger name!</p>';
+    reserveNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">SVP entre Nom passager</p>';
     ticketPreview.classList.add('hidden');
     return;
 }
@@ -99,7 +99,7 @@ if (selectedSeat === '') {
 }
 
 if (selectedSeat === '') {
-    reserveNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">No free seats</p>';
+    reserveNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">tout ouccupe</p>';
     ticketPreview.classList.add('hidden');
     return;
 }
@@ -109,7 +109,7 @@ if (selectedSeat === '') {
     const targetSeat = document.querySelector(`#place${id}`);
 
     if (targetSeat.style.backgroundColor === "red") {
-        reserveNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">This place is already reserved!</p>';
+        reserveNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">set place reserve</p>';
         ticketPreview.classList.add('hidden');
         return;
     }
@@ -118,10 +118,10 @@ if (selectedSeat === '') {
 
     ticketPreview.innerHTML = `
         <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl text-sm space-y-1">
-            <p class="font-bold text-slate-900">Ticket Confirmed </p>
-            <p class="text-slate-700"><strong>Passenger:</strong> ${passengerName}</p>
-            <p class="text-slate-700"><strong>Seat:</strong> Seat ${selectedSeat}</p>
-            <p class="text-teal-600 font-semibold pt-1">Price: 80 DH</p>
+            <p class="font-bold text-slate-900">resirvation succes</p>
+            <p class="text-slate-700"><strong>Passagere:</strong> ${passengerName}</p>
+            <p class="text-slate-700"><strong>siege:</strong> Seat ${selectedSeat}</p>
+            <p class="text-teal-600 font-semibold pt-1">prix: 80 DH</p>
         </div>
     `;
 
@@ -300,12 +300,12 @@ modifyForm.addEventListener('submit', function(e) {
     const newSeat = modifySeatSelect.value;     
 
     if (oldSeat === '') {
-        modifyNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">Please select a passenger to modify!</p>';
+        modifyNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">Please select a passenger to modife!</p>';
         return;
     }
 
     if (newName === '') {
-        modifyNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">Please enter a new name!</p>';
+        modifyNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">svp entree neuvelle nom</p>';
         return;
     }
 
@@ -317,7 +317,7 @@ modifyForm.addEventListener('submit', function(e) {
         const newLibreEl = document.querySelector(`#libre${newId}`);
 
         if (!newLibreEl) {
-            modifyNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">This new seat is already reserved!</p>';
+            modifyNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">ila deja existe</p>';
             return;
         }
 
@@ -345,13 +345,13 @@ modifyForm.addEventListener('submit', function(e) {
            
         }
 
-        modifyNotification.innerHTML = '<p class="text-teal-600 text-sm font-medium">Seat and name updated successfully!</p>';
+        modifyNotification.innerHTML = '<p class="text-teal-600 text-sm font-medium">loperation de modification a ete effrcute avec succes</p>';
         return;
     }
 
     if (targetNameRev) {
         targetNameRev.innerHTML = `<div class=""><p class="text-slate-700">${newName}</p></div>`;
-        modifyNotification.innerHTML = '<p class="text-teal-600 text-sm font-medium">Modification saved successfully</p>';
+        modifyNotification.innerHTML = '<p class="text-teal-600 text-sm font-medium">Modification succes</p>';
     }
 });
 
@@ -364,7 +364,7 @@ cancelForm.addEventListener('submit', function(e) {
     const selectedSeat = cancelPassengerSelect.value;
 
     if (selectedSeat === '') {
-        cancelNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">Please select a passenger to cancel!</p>';
+        cancelNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">Vuillez saisir un Nom</p>';
         return;
     }
 
@@ -373,7 +373,7 @@ cancelForm.addEventListener('submit', function(e) {
     const targetNameRev = document.querySelector(`#namerev${id}`);
 
     if (targetSeat.style.backgroundColor !== "red") {
-        cancelNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">This place is not reserved</p>';
+        cancelNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">la place non reservee</p>';
         return;
     }
 
@@ -414,7 +414,7 @@ cancelForm.addEventListener('submit', function(e) {
     totalNotification.innerHTML = `<span class = "font-weight: bold; alltotal">${total}</span>`
     
 
-    cancelNotification.innerHTML = '<p class="text-teal-600 text-sm font-medium">Reservation cancelled successfully!</p>';
+    cancelNotification.innerHTML = '<p class="text-teal-600 text-sm font-medium">Reservation anuller </p>';
     cancelPassengerSelect.value = '';
 });
 function save() {

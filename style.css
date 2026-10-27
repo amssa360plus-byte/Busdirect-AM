@@ -20,14 +20,14 @@ html, body {
     width: 40px;
     position: relative;
     top: -40px;
-    left: 60px;
+    left: 70px;
     font-weight: bold;
     font-size:medium;
 }
 
 #header1{
     
-    background-color: whitesmoke;
+    background-color: #ffffff;
     border-color: black;
     display: flex;
     flex-direction: column;
@@ -54,7 +54,13 @@ html, body {
     position: relative;
     right: 10px;
     font-weight: bold;
+    transition: color 0.2s;
+    cursor: pointer;
 }
+#resirvation :hover{
+    color: bleu;
+}
+
 #ticket{
 
     position: relative;
@@ -68,7 +74,7 @@ html, body {
 #headr2{
   border-radius: 20px;
   border-color: black;
-  background-color: whitesmoke;
+  background-color: #ffffff;
   position: relative;
   top: 10px;
   height: 50px;
@@ -91,7 +97,7 @@ span .fa-road{
 #headr3{
   border-radius: 20px;
   border-color: black;
-  background-color: whitesmoke;
+  background-color: #ffffff;
   height: 50px;
   width: 150px;
   margin-left: 400px;
@@ -105,7 +111,7 @@ span .fa-road{
 #headr4{
   border-radius: 20px;
   border-color: black;
-  background-color: whitesmoke;
+  background-color: #ffffff;
   height: 50px;
   width: 200px;
   margin-left: 600px;
@@ -163,7 +169,7 @@ span .fa-road{
 
 .seat-btn:hover {
     border-color: #06c452;
-    background-color: #eff6ff;
+    background-color: #ffffff;
     transform: translateY(-2px);
 }
 
@@ -182,7 +188,7 @@ span .fa-road{
 #headr5{
   border-radius: 20px;
   border-color: black;
-  background-color: whitesmoke;
+  background-color: #ffffff;
   height: 50px;
   width: 150px;
   position: relative;
@@ -191,14 +197,21 @@ span .fa-road{
    
 }
 .TOTAL{
-    margin-left: 28px;
-    margin-top: 11px;
-    font-weight: bold;
+    position: relative;
+    top: 10px;
+    left: 30px;
+    font-weight: bolder;
+}
+.total-form{
+    position: relative;
+    top: 10px;
+    left: 30px;
+    font-weight: bolder;
 }
 #headr6{
   border-radius: 20px;
   border-color: black;
-  background-color: whitesmoke;
+  background-color: #ffffff;
   height: 50px;
   width: 150px;
   position: relative;
@@ -208,7 +221,7 @@ span .fa-road{
 #headr7{
   border-radius: 20px;
   border-color: black;
-  background-color: whitesmoke;
+  background-color: #ffffff;
   height: 50px;
   width: 150px;
   position: relative;
@@ -216,7 +229,7 @@ span .fa-road{
   top: -126px;
 }
 body{
-    background-color: #eff3ff;
+    background-color: #e5eaf5;
     
 }
     .dispo span{
@@ -237,6 +250,20 @@ body{
     }
     #allplace{
         margin-left: 0px;
+    }
+    .Place{
+        position: relative;
+        top: -10px;
+        left: 40px;
+        
+    }
+    #logouser{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        left: 120px;
+        top: -27px;
+
     }
     
 
@@ -286,6 +313,7 @@ body{
         position: relative;
         top: 40px;
         height: -600px;
+        margin-left:-50px ;
     }
     #headr7{
        position: relative;
@@ -307,6 +335,14 @@ body{
     }
     .section{
         margin-top: 70px;
+    }
+     #logouser{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        left: 66px;
+        top: -27px;
+
     }
 
 

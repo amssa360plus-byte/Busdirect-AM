@@ -17,13 +17,13 @@
         <div class="border-2 border-solid rounded-full h-12 " id="header1">
             <div class="logo">
 
-                <img src="img/360_F_214292295_dsMiBAa83bToIrvyKXeXDJyZtaK0S2bv-removebg-preview.png" alt="logo bus">
-                <span id="name">AM BUS</span>
+                <img src="img/d38fbea432c4d6212640eceb98e55303-removebg-preview.png" alt="logo bus">
+                <span id="name">MV33</span>
             </div>
             <div class="right-header">
                 <span> <a href="#resivation" id="resirvation">resirvation </a>
                     <a href="#ticket" id="ticket">ticket</a>
-                    <i class="fa-regular fa-circle-user"></i></span>
+                    <img src="img/d62a4f85930c117939a59084387ff934-removebg-preview.png" alt="user" id = "logouser"></span>
             </div>
 
     </header>
@@ -49,7 +49,7 @@
                     <span>libre</span>
                 </div>
                 <div class="border-2 border-solid" id="headr5">
-                <span class="TOTAL">TOTAL:  </span>
+                <span class="TOTAL">Total:  </span>
                 <span class="total-form">0</span>
             </div>
             <div class="border-2 border-solid" id="headr6">
@@ -224,18 +224,18 @@
             <div class="flex flex-col gap-6">
                 <section aria-labelledby="reserve-title"
                     class="rounded-2xl border border-slate-200 bg-white p-2 shadow-xs sm:p-5">
-                    <h2 id="reserve-title" class="mb-3 text-base font-bold text-slate-900">New reservation</h2>
+                    <h2 id="reserve-title" class="mb-3 text-base font-bold text-slate-900">nouvelles reservation</h2>
                     <form id="reserve-form" novalidate>
-                        <label for="reserve-name" class="mb-1 block text-sm font-semibold text-slate-700">Passenger
-                            name</label>
+                        <label for="reserve-name" class="mb-1 block text-sm font-semibold text-slate-700">Passager
+                            Nom</label>
                         <input id="reserve-name" name="reserve-name" type="text" autocapitalize="none"
                             enterkeyhint="done" autocomplete="off" maxlength="60" placeholder="EXAMPLE MAX VERSTAPPEND"
                             class="mb-3 w-full rounded-lg border border-slate-300 bg-white px-1 py-2 text-sm placeholder:text-slate-400" />
-                        <label for="reserve-seat" class="mb-1 block text-sm font-semibold text-slate-700">Seat
-                            (optional)</label>
+                        <label for="reserve-seat" class="mb-1 block text-sm font-semibold text-slate-700">siege
+                        </label>
                         <select id="reserve-seat" name="reserve-seat"
                             class="mb-3 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 pr-9 text-sm">
-                            <option value="">Choose a seat</option>
+                            <option value="">Choix</option>
                             <option value="1">Seat 1</option>
                             <option value="2">Seat 2</option>
                             <option value="3">Seat 3</option>
@@ -259,7 +259,7 @@
                         </select>
                         <button type="submit" id="reserve-submit"
                             class="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-gray-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-gray-600 active:bg-teal-600 disabled:cursor-not-allowed disabled:opacity-50">
-                            Reserve seat passenger80 DH
+                            reserver une place
                         </button>
                     </form>
                     <div id="reserve-notification" class="mt-3" aria-live="polite"></div>
@@ -268,23 +268,23 @@
 
                 <section aria-labelledby="modify-title"
                     class="rounded-2xl border border-slate-200 bg-white p-4 shadow-xs sm:p-5">
-                    <h2 id="modify-title" class="mb-3 text-base font-bold text-slate-900">Modify reservation</h2>
+                    <h2 id="modify-title" class="mb-3 text-base font-bold text-slate-900">modification</h2>
                     <form id="modify-form" novalidate>
                         <label for="modify-passenger"
-                            class="mb-1 block text-sm font-semibold text-slate-700">Passenger</label>
+                            class="mb-1 block text-sm font-semibold text-slate-700">Passagere</label>
                         <select id="modify-passenger" name="modify-passenger"
                             class="mb-3 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 pr-9 text-sm">
-                            <option value="">Select a passenger…</option>
+                            <option value="">Se</option>
 
                         </select>
-                        <label for="modify-name" class="mb-1 block text-sm font-semibold text-slate-700">Passenger
-                            name</label>
+                        <label for="modify-name" class="mb-1 block text-sm font-semibold text-slate-700">
+                            NOM</label>
                         <input id="modify-name" type="text" autocapitalize="none" enterkeyhint="done" autocomplete="off"
                             maxlength="60"
                             class="mb-3 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm placeholder:text-slate-400"
                             placeholder="Name appears after selecting a passenger" />
                         <label for="modify-seat" class="mb-1 block text-sm font-semibold text-slate-700">Destination
-                            seat</label>
+                            siege</label>
                         <select id="modify-seat"
                             class="mb-3 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 pr-9 text-sm">
                             <option value="">No reservation selected</option>
@@ -312,7 +312,7 @@
                         <button type="submit"
                             class="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-slate-800 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-slate-700 active:bg-slate-900 disabled:cursor-not-allowed disabled:opacity-50">
                             <i class="fa-solid fa-square-check"></i>
-                            Save changes
+                            enregistrer
                         </button>
                     </form>
                     <div id="modify-notification" class="mt-3" aria-live="polite"></div>
@@ -326,7 +326,7 @@
                             class="mb-1 block text-sm font-semibold text-slate-700">Passenger</label>
                         <select id="cancel-passenger" name="cancel-passenger"
                             class="mb-3 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 pr-9 text-sm">
-                            <option value="" >Select a passenger…</option>
+                            <option value="" >slectionner siege</option>
                             <option value="1">Seat 1</option>
                             <option value="2">Seat 2</option>
                             <option value="3">Seat 3</option>
@@ -353,8 +353,8 @@
                         <button type="submit"
                             class="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-rose-300 bg-rose-50 px-4 py-2.5 text-sm font-semibold text-rose-700 transition-colors hover:bg-rose-100 active:bg-rose-200 disabled:cursor-not-allowed disabled:opacity-50">
                             <i class="fa-solid fa-ban"></i>
-                            Cancel-reservation
-                        </button>
+                            annuler
+                    </button>
                     </form>
                     <div id="cancel-notification" class="mt-3" aria-live="polite"></div>
                 </section>
