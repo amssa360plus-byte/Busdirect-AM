@@ -1,4 +1,5 @@
 let resirvation = [];
+let local = [];
 let price = 80;
 let final = 0
 let place  = 0
@@ -78,19 +79,31 @@ const mo_modifie = document.querySelector('#modify-passenger');
 reserveForm.addEventListener('submit', function(e) {
     e.preventDefault(); 
     const passengerName = reserveNameInput.value.trim();
-    const selectedSeat = reserveSeatSelect.value;
+    let selectedSeat = reserveSeatSelect.value;
 
     if (passengerName === '') {
-        reserveNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">Please enter passenger name!</p>';
-        ticketPreview.classList.add('hidden');
-        return;
+    reserveNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">Please enter passenger name!</p>';
+    ticketPreview.classList.add('hidden');
+    return;
+}
+
+if (selectedSeat === '') {
+    for (let i = 1; i <= 20; i++) {
+        const autoId = String(i).padStart(2, '0');
+        if (document.querySelector('#place' + autoId).style.backgroundColor !== 'red') {
+            selectedSeat = String(i);
+            reserveSeatSelect.value = selectedSeat;
+            break;
+        }
     }
+}
+
+if (selectedSeat === '') {
+    reserveNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">No free seats</p>';
+    ticketPreview.classList.add('hidden');
+    return;
+}
     
-    if (selectedSeat === '') {
-        reserveNotification.innerHTML = '<p class="text-red-500 text-sm font-medium">Please select a seat!</p>';
-        ticketPreview.classList.add('hidden');
-        return;
-    }
 
     const id = selectedSeat.padStart(2, '0');
     const targetSeat = document.querySelector(`#place${id}`);
@@ -404,7 +417,29 @@ cancelForm.addEventListener('submit', function(e) {
     cancelNotification.innerHTML = '<p class="text-teal-600 text-sm font-medium">Reservation cancelled successfully!</p>';
     cancelPassengerSelect.value = '';
 });
+function save() {
+    const data = {};
+    for (let i = 1; i <= 20; i++) {
+        const id = String(i).padStart(2, '0');
+        const place = document.querySelector('#place' + id);
+        if (place.style.backgroundColor === 'red') {
+            data[i] = document.querySelector('#namerev' + id).textContent.trim();
+        }
+    }
+    localStorage.setItem('seats', JSON.stringify(data));
+}
 
+function load() {
+    const data = JSON.parse(localStorage.getItem('seats')) || {};
+    for (const seat in data) {
+        reserveNameInput.value = data[seat];
+        reserveSeatSelect.value = seat;
+        reserveForm.requestSubmit();
+    }
+    reserveNameInput.value = '';
+    reserveSeatSelect.value = '';
+    ticketPreview.classList.add('hidden');
+}
 
-
-
+load();
+document.addEventListener('submit', save);
